@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liana — L'API qui relie vos apps au Mobile Money africain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER AND NAV-->
+  <header class="nav">
+    <div class="wrap">
+      <div class="nav__brand">
+        Liana
+      </div>
+      <ul class="nav__links">
+        <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+        <li><a href="#avis">Avis clients</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#cta">Documentation</a></li>
+      </ul>
+      <a href="#cta" class="btn btn--primary">Créer un compte</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">API Mobile Money — Afrique centrale</span>
+        <h1 class="hero__title">Une seule liane pour relier<br>votre app à <em>tout le Mobile Money</em>.</h1>
+        <p class="hero__lede">
+          Liana connecte votre application à MTN MoMo, Airtel Money et PawaPay derrière une
+          API unique, pensée pour les développeurs de Brazzaville à Kinshasa. Un intégration, tous les opérateurs.
+        </p>
+        <div class="hero__actions">
+          <a href="#cta" class="btn btn--primary">Démarrer gratuitement</a>
+          <a href="#fonctionnalites" class="btn btn--ghost">Voir la documentation</a>
+        </div>
+        <div class="hero__trust">
+          <span>3 opérateurs connectés</span>
+          <span>Paiements en FCFA</span>
+          <span>Webhooks en temps réel</span>
+        </div>
+      </div>
+
+      <div class="console">
+        <div class="console__bar">
+          <span class="console__dot"></span>
+          <span class="console__dot"></span>
+          <span class="console__dot"></span>
+          <span class="console__title">requête — paiement.js</span>
+        </div>
+        <div class="console__body">
+<pre><span class="k">POST</span> <span class="m">/v1/paiements</span>
+{
+  <span class="k">"operateur"</span>: <span class="s">"mtn_momo"</span>,
+  <span class="k">"montant"</span>: <span class="n">5000</span>,
+  <span class="k">"devise"</span>: <span class="s">"XAF"</span>,
+  <span class="k">"telephone"</span>: <span class="s">"+242 06 xxx xx xx"</span>
+}
+
+<span class="k">→ 200 OK</span>
+{
+  <span class="k">"statut"</span>: <span class="n">"confirme"</span>,
+  <span class="k">"reference"</span>: <span class="s">"LIA-8841F"</span>
+}</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="partners">
+    <div class="wrap">
+      <span>MTN MoMo</span>
+      <span>Airtel Money</span>
+      <span>PawaPay</span>
+      <span>BRVM/BVMAC ready</span>
+      <span>Congo · RDC · Cameroun</span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FONCTIONNALITÉS
+  ============================================ -->
+  <section class="section" id="fonctionnalites">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">Fonctionnalités</span>
+        <h2>Construit pour les paiements mobiles d'Afrique centrale.</h2>
+        <p>Trois piliers pensés pour que vous passiez moins de temps sur l'intégration, et plus sur votre produit.</p>
+      </div>
+
+      <div class="features__grid">
+        <article class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+          </div>
+          <h3>Multi-opérateurs unifiés</h3>
+          <p>Une seule intégration pour MTN MoMo, Airtel Money et PawaPay. Changez d'opérateur sans changer une ligne de code côté client.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+          </div>
+          <h3>Confirmation en temps réel</h3>
+          <p>Webhooks signés et statuts instantanés dès qu'un client valide un paiement, plus besoin d'interroger l'API en boucle.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/></svg>
+          </div>
+          <h3>Pensé pour la région</h3>
+          <p>FCFA natif, serveurs à faible latence pour l'Afrique centrale, et une équipe support qui répond en français.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TESTIMONIALS
+  ============================================ -->
+  <section class="testimonials" id="avis">
+    <div class="wrap section">
+      <div class="section__head">
+        <span class="eyebrow">Avis clients</span>
+        <h2>Adopté par les équipes qui construisent la fintech congolaise.</h2>
+      </div>
+
+      <div class="testimonials__grid">
+        <article class="testimonial">
+          <p>On a branché Liana sur notre app de tontine en un après-midi. Le webhook de confirmation nous a évité des semaines de développement.</p>
+          <div class="testimonial__author">
+            <span class="testimonial__avatar">GM</span>
+            <div>
+              <div class="testimonial__name">Grâce Moukala</div>
+              <div class="testimonial__role">Fondatrice, TantiCash</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <p>Le fait de gérer MTN MoMo et Airtel Money avec un seul contrat d'API a simplifié tout notre backend de paiement.</p>
+          <div class="testimonial__author">
+            <span class="testimonial__avatar">DB</span>
+            <div>
+              <div class="testimonial__name">Divin Bakala</div>
+              <div class="testimonial__role">CTO, Mbolo Invest</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <p>Support réactif, documentation claire en français, et une sandbox fidèle à la production. Exactement ce qu'il nous fallait à Brazzaville.</p>
+          <div class="testimonial__author">
+            <span class="testimonial__avatar">SN</span>
+            <div>
+              <div class="testimonial__name">Sarah Nkounkou</div>
+              <div class="testimonial__role">Lead Dev, PILU</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PRICING
+  ============================================ -->
+  <section class="section" id="tarifs">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">Tarifs</span>
+        <h2>Des plans qui grandissent avec votre app.</h2>
+        <p>Commencez gratuitement en sandbox, passez en production quand vous êtes prêt.</p>
+      </div>
+
+      <div class="pricing__grid">
+        <article class="plan">
+          <span class="plan__name">Découverte</span>
+          <div class="plan__price">Gratuit</div>
+          <p class="plan__desc">Pour tester votre intégration en sandbox.</p>
+          <ul class="plan__list">
+            <li>100 transactions test / mois</li>
+            <li>1 opérateur au choix</li>
+            <li>Webhooks basiques</li>
+            <li>Support par email</li>
+          </ul>
+          <a href="#cta" class="btn btn--ghost">Commencer</a>
+        </article>
+
+        <article class="plan">
+          <span class="plan__name">Croissance</span>
+          <div class="plan__price">25&nbsp;000 <span>FCFA / mois</span></div>
+          <p class="plan__desc">Pour les apps en production active.</p>
+          <ul class="plan__list">
+            <li>Transactions illimitées</li>
+            <li>3 opérateurs (MTN, Airtel, PawaPay)</li>
+            <li>Webhooks signés + relances auto</li>
+            <li>Support prioritaire, 24h</li>
+          </ul>
+          <a href="#cta" class="btn btn--primary">Choisir Croissance</a>
+        </article>
+
+        <article class="plan">
+          <span class="plan__name">Entreprise</span>
+          <div class="plan__price">Sur devis</div>
+          <p class="plan__desc">Pour banques, fintechs et gros volumes.</p>
+          <ul class="plan__list">
+            <li>SLA dédié + infrastructure isolée</li>
+            <li>Intégration BRVM/BVMAC sur demande</li>
+            <li>Gestionnaire de compte dédié</li>
+            <li>Facturation multi-devises</li>
+          </ul>
+          <a href="#cta" class="btn btn--ghost">Contacter l'équipe</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA
+  ============================================ -->
+  <section class="section" id="cta">
+    <div class="cta wrap">
+      <span class="eyebrow">Prêt à intégrer</span>
+      <h2>Connectez votre app au Mobile Money en un après-midi.</h2>
+      <p>Créez une clé sandbox gratuite et testez votre premier paiement MTN MoMo en moins de 10 minutes.</p>
+      <div class="cta__actions">
+        <a href="#" class="btn btn--primary">Créer une clé API</a>
+        <a href="#" class="btn btn--ghost">Lire la documentation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+  ============================================ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer__brand">
+            Liana
+          </div>
+          <p class="footer__tag">L'API qui relie vos applications au Mobile Money d'Afrique centrale.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Produit</h4>
+          <ul>
+            <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#">Statut de l'API</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Guides d'intégration</a></li>
+            <li><a href="#avis">Avis clients</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Entreprise</h4>
+          <ul>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Liana — Brazzaville, République du Congo</span>
+        <span>Fait avec soin pour les développeurs d'Afrique centrale</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
