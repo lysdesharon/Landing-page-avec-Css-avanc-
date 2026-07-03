@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Liana — L'API qui relie vos apps au Mobile Money africain</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liana — L'API qui relie vos apps au Mobile Money africain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- HEADER AND NAV-->
@@ -26,6 +30,8 @@
     </div>
   </header>
 
+  <main>
+
   <!-- HERO SECTION -->
   <section class="hero">
     <div class="wrap">
@@ -34,16 +40,11 @@
         <h1 class="hero__title">Une seule liane pour relier<br>votre app à <em>tout le Mobile Money</em>.</h1>
         <p class="hero__lede">
           Liana connecte votre application à MTN MoMo, Airtel Money et PawaPay derrière une
-          API unique, pensée pour les développeurs de Brazzaville à Kinshasa. Un intégration, tous les opérateurs.
+          API unique, pensée pour les développeurs d' Afrique centrale. Un intégration, tous les opérateurs.
         </p>
         <div class="hero__actions">
           <a href="#cta" class="btn btn--primary">Démarrer gratuitement</a>
           <a href="#fonctionnalites" class="btn btn--ghost">Voir la documentation</a>
-        </div>
-        <div class="hero__trust">
-          <span>3 opérateurs connectés</span>
-          <span>Paiements en FCFA</span>
-          <span>Webhooks en temps réel</span>
         </div>
       </div>
 
@@ -55,7 +56,7 @@
           <span class="console__title">requête — paiement.js</span>
         </div>
         <div class="console__body">
-<pre><span class="k">POST</span> <span class="m">/v1/paiements</span>
+          <pre><span class="k">POST</span> <span class="m">/v1/paiements</span>
 {
   <span class="k">"operateur"</span>: <span class="s">"mtn_momo"</span>,
   <span class="k">"montant"</span>: <span class="n">5000</span>,
@@ -83,9 +84,7 @@
     </div>
   </div>
 
-  <!-- ============================================
-       FONCTIONNALITÉS
-  ============================================ -->
+  <!-- FONCTIONNALITIES-->
   <section class="section" id="fonctionnalites">
     <div class="wrap">
       <div class="section__head">
@@ -97,34 +96,42 @@
       <div class="features__grid">
         <article class="feature-card">
           <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M8 12h8M12 8v8" />
+            </svg>
           </div>
           <h3>Multi-opérateurs unifiés</h3>
-          <p>Une seule intégration pour MTN MoMo, Airtel Money et PawaPay. Changez d'opérateur sans changer une ligne de code côté client.</p>
+          <p>Une seule intégration pour MTN MoMo, Airtel Money et PawaPay. Changez d'opérateur sans changer une ligne de
+            code côté client.</p>
         </article>
 
         <article class="feature-card">
           <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" />
+            </svg>
           </div>
           <h3>Confirmation en temps réel</h3>
-          <p>Webhooks signés et statuts instantanés dès qu'un client valide un paiement, plus besoin d'interroger l'API en boucle.</p>
+          <p>Webhooks signés et statuts instantanés dès qu'un client valide un paiement, plus besoin d'interroger l'API
+            en boucle.</p>
         </article>
 
         <article class="feature-card">
           <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z" />
+            </svg>
           </div>
           <h3>Pensé pour la région</h3>
-          <p>FCFA natif, serveurs à faible latence pour l'Afrique centrale, et une équipe support qui répond en français.</p>
+          <p>FCFA natif, serveurs à faible latence pour l'Afrique centrale, et une équipe support qui répond en
+            français.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ============================================
-       TESTIMONIALS
-  ============================================ -->
+  <!--TESTIMONIALS-->
   <section class="testimonials" id="avis">
     <div class="wrap section">
       <div class="section__head">
@@ -134,7 +141,8 @@
 
       <div class="testimonials__grid">
         <article class="testimonial">
-          <p>On a branché Liana sur notre app de tontine en un après-midi. Le webhook de confirmation nous a évité des semaines de développement.</p>
+          <p>On a branché Liana sur notre app de tontine en un après-midi. Le webhook de confirmation nous a évité des
+            semaines de développement.</p>
           <div class="testimonial__author">
             <span class="testimonial__avatar">GM</span>
             <div>
@@ -145,7 +153,8 @@
         </article>
 
         <article class="testimonial">
-          <p>Le fait de gérer MTN MoMo et Airtel Money avec un seul contrat d'API a simplifié tout notre backend de paiement.</p>
+          <p>Le fait de gérer MTN MoMo et Airtel Money avec un seul contrat d'API a simplifié tout notre backend de
+            paiement.</p>
           <div class="testimonial__author">
             <span class="testimonial__avatar">DB</span>
             <div>
@@ -156,7 +165,8 @@
         </article>
 
         <article class="testimonial">
-          <p>Support réactif, documentation claire en français, et une sandbox fidèle à la production. Exactement ce qu'il nous fallait à Brazzaville.</p>
+          <p>Support réactif, documentation claire en français, et une sandbox fidèle à la production. Exactement ce
+            qu'il nous fallait à Brazzaville.</p>
           <div class="testimonial__author">
             <span class="testimonial__avatar">SN</span>
             <div>
@@ -169,9 +179,7 @@
     </div>
   </section>
 
-  <!-- ============================================
-       PRICING
-  ============================================ -->
+  <!-- PRICING -->
   <section class="section" id="tarifs">
     <div class="wrap">
       <div class="section__head">
@@ -196,7 +204,7 @@
 
         <article class="plan">
           <span class="plan__name">Croissance</span>
-          <div class="plan__price">25&nbsp;000 <span>FCFA / mois</span></div>
+          <div class="plan__price">25000 <span>FCFA / mois</span></div>
           <p class="plan__desc">Pour les apps en production active.</p>
           <ul class="plan__list">
             <li>Transactions illimitées</li>
@@ -223,9 +231,7 @@
     </div>
   </section>
 
-  <!-- ============================================
-       CTA
-  ============================================ -->
+  <!--  INTEGRATION -->
   <section class="section" id="cta">
     <div class="cta wrap">
       <span class="eyebrow">Prêt à intégrer</span>
@@ -237,10 +243,9 @@
       </div>
     </div>
   </section>
+  </main>
 
-  <!-- ============================================
-       FOOTER
-  ============================================ -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="wrap">
       <div class="footer__grid">
@@ -281,10 +286,11 @@
 
       <div class="footer__bottom">
         <span>© 2026 Liana — Brazzaville, République du Congo</span>
-        <span>Fait avec soin pour les développeurs d'Afrique centrale</span>
+        <span>Fait avec soin pour les développeurs d'Afrique</span>
       </div>
     </div>
   </footer>
 
 </body>
+
 </html>
